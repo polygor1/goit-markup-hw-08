@@ -141,7 +141,8 @@ ul {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
-    margin-right: 88px;
+    margin-left: 0;
+    margin-right: auto;
   }
 }
 
@@ -160,12 +161,12 @@ ul {
 .header {
   margin-top: 0px;
   border-bottom: 1px solid var(--border-color);
-  padding: 24px 0 25px;
 }
 
 .header .container {
   flex-direction: row;
   display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -177,6 +178,18 @@ ul {
   }
   .header .eadr {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    padding: 21px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 24px 0 25px;
   }
 }
 
@@ -236,17 +249,26 @@ ul {
   margin-bottom: 32px;
 }
 
+.nav__item:nth-child(1) .nav__str--current::after {
+  width: 48px;
+}
+
+.nav__item:nth-child(2) .nav__str--current::after {
+  width: 75px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav {
     display: flex;
+    position: absolute;
     font-size: 14px;
     line-height: 1.1428;
     align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .nav__list {
-    position: absolute;
     display: flex;
-    margin: 0 auto;
   }
   .nav__item {
     margin-bottom: 0;
@@ -271,13 +293,7 @@ ul {
     height: 4px;
     border-radius: 2px;
     background: var(--touch-color);
-    margin-top: 28px;
-  }
-  .nav__item:nth-child(1) .nav__str--current::after {
-    width: 48px;
-  }
-  .nav__item:nth-child(2) .nav__str--current::after {
-    width: 75px;
+    margin-top: 44px;
   }
 }
 
@@ -317,12 +333,11 @@ ul {
     background: var(--touch-color);
     margin-top: 43px;
   }
-  .nav__item:nth-child(1) .nav__str--current::after {
-    width: 48px;
-  }
-  .nav__item:nth-child(2) .nav__str--current::after {
-    width: 78px;
-  }
+}
+
+.eadr {
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .eadr__mail:hover, .eadr__mail:focus, .eadr__tel:hover, .eadr__tel:focus {
@@ -342,7 +357,6 @@ ul {
   .eadr {
     display: flex;
     padding: 0;
-    justify-content: flex-end;
     justify-content: start;
     flex-direction: column-reverse;
   }
@@ -368,16 +382,34 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .eadr {
-    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1.667;
     margin-right: 0;
+    margin-left: auto;
     padding: 0;
   }
   .eadr__mail, .eadr__tel {
-    padding: 0;
+    display: flex;
     align-items: center;
+    padding: 0;
+    height: 14px;
     color: var(--regular-color);
+  }
+  .eadr__mail {
+    margin-bottom: 10px;
+  }
+  .eadr__mail .eadr__ico {
+    width: 14px;
+    height: 10px;
+  }
+  .eadr__tel .eadr__ico {
+    width: 10px;
+    height: 14px;
   }
   .eadr__ico {
     fill: var(--regular-color);
@@ -387,8 +419,13 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .eadr {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
+    font-size: 14px;
+    line-height: 1.143;
     margin-right: 0;
+    margin-left: auto;
     padding: 0;
   }
   .eadr__mail, .eadr__tel {
@@ -397,6 +434,14 @@ ul {
     align-items: center;
     margin-left: 50px;
     color: var(--regular-color);
+  }
+  .eadr__mail .eadr__ico {
+    width: 16px;
+    height: 12px;
+  }
+  .eadr__tel .eadr__ico {
+    width: 10px;
+    height: 16px;
   }
   .eadr__ico {
     fill: var(--regular-color);
@@ -644,7 +689,7 @@ ul {
 
 .team__card {
   background-color: var(--page-color);
-  box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
+  box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -933,7 +978,7 @@ ul {
   transform: translate(-50%, -50%);
   width: 450px;
   background: var(--face-color);
-  box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
+  box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
   border-radius: 4px;
   padding: 40px;
 }
@@ -1227,7 +1272,7 @@ ul {
   cursor: pointer;
   background-color: var(--touch-color);
   color: var(--face-color);
-  box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
+  box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
 }
 
 .button__icon {
@@ -1322,7 +1367,7 @@ ul {
 }
 
 .card:hover {
-  box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
+  box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
   cursor: pointer;
 }
 
