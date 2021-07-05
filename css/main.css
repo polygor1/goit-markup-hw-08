@@ -139,14 +139,22 @@ ul {
   color: var(--logo-dark-color);
 }
 
-.logo__part {
-  color: var(--logo-color);
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    margin-right: 88px;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .logo {
+    font-size: 26px;
+    line-height: 1.192;
     margin-right: 93px;
   }
+}
+
+.logo__part {
+  color: var(--logo-color);
 }
 
 .header {
@@ -228,18 +236,66 @@ ul {
   margin-bottom: 32px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav {
     display: flex;
+    font-size: 14px;
     line-height: 1.1428;
     align-items: center;
+  }
+  .nav__list {
+    position: absolute;
+    display: flex;
+    margin: 0 auto;
+  }
+  .nav__item {
+    margin-bottom: 0;
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .nav__str {
+    color: var(--title-color);
+  }
+  .nav__str:hover, .nav__str:focus {
+    color: var(--touch-color);
+  }
+  .nav__str--current {
+    display: flex;
+    flex-direction: column;
+    color: var(--touch-color);
+  }
+  .nav__str--current::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    border-radius: 2px;
+    background: var(--touch-color);
+    margin-top: 28px;
+  }
+  .nav__item:nth-child(1) .nav__str--current::after {
+    width: 48px;
+  }
+  .nav__item:nth-child(2) .nav__str--current::after {
+    width: 75px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    display: flex;
     font-size: 14px;
+    line-height: 1.1428;
+    align-items: center;
   }
   .nav__list {
     display: flex;
     justify-content: left;
   }
   .nav__item {
+    margin-bottom: 0;
+  }
+  .nav__item:not(:last-child) {
     margin-right: 50px;
   }
   .nav__str {
@@ -313,6 +369,23 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
+  .eadr {
+    align-items: center;
+    margin-right: 0;
+    padding: 0;
+  }
+  .eadr__mail, .eadr__tel {
+    padding: 0;
+    align-items: center;
+    color: var(--regular-color);
+  }
+  .eadr__ico {
+    fill: var(--regular-color);
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .eadr {
     align-items: center;
     margin-right: 0;

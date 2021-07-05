@@ -59,8 +59,27 @@
     &__mail,
     &__tel {
       padding: 0;
+      // display: flex;
+      align-items: center;
+      // margin-left: 50px;
+      color: var(--regular-color);
+    }
+    &__ico {
+      fill: var(--regular-color);
+      margin-right: 10px;
+    }
+  }
+}
+@media screen and (min-width: $desktop) {
+  .eadr {
+    align-items: center;
+    margin-right: 0;
+    padding: 0;
+
+    &__mail,
+    &__tel {
+      padding: 0;
       display: flex;
-      // justify-content: flex-end;
       align-items: center;
       margin-left: 50px;
       color: var(--regular-color);

@@ -1,7 +1,6 @@
 .header {
   margin-top: 0px;
   border-bottom: 1px solid var(--border-color);
-  padding: 24px 0 25px;
   & .container {
     flex-direction: row;
     display: flex;
@@ -17,5 +16,16 @@
     & .eadr {
       display: none;
     }    
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $desktop){
+  .header {
+    padding: 26px 0;
+  }
+}
+@media screen and (min-width: $desktop){
+  .header {
+    padding: 24px 0 25px;
   }
 }

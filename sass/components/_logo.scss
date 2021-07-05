@@ -6,10 +6,18 @@
   letter-spacing: 0.03em;
   color: var(--logo-dark-color);
 
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.192;
+    margin-right: 93px;
+  }
+  
   &__part {
     color: var(--logo-color);
   }
-  @media screen and (min-width: $tablet) {
-    margin-right: 93px;
-  }
+
 }
