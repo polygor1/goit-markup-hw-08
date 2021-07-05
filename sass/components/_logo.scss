@@ -5,13 +5,10 @@
   line-height: 1.167;
   letter-spacing: 0.03em;
   color: var(--logo-dark-color);
+  margin-left: 0;
+  margin-right: auto;
 
-  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
-    margin-left: 0;
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: $desktop) {
+   @media screen and (min-width: $desktop) {
     font-size: 26px;
     line-height: 1.192;
     margin-right: 93px;
