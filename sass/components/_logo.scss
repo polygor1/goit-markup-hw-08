@@ -1,0 +1,15 @@
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: var(--logo-dark-color);
+
+  &__part {
+    color: var(--logo-color);
+  }
+  @media screen and (min-width: $tablet) {
+    margin-right: 93px;
+  }
+}

@@ -1,0 +1,17 @@
+.portfolio {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+
+  &__title {
+    font-size: 0px;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}

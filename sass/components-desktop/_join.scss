@@ -1,0 +1,22 @@
+.join {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+  margin-top: 12px;
+
+  & .socnet__item {
+    background-color: var(--background-footer-icon-color);
+  }
+
+  & .socnet__icon {
+    fill: var(--ico-ligt-color);
+  }
+
+  & .socnet__icon:hover,
+  & .socnet__icon:focus,
+  & .socnet__item:hover,
+  & .socnet__item:focus {
+    background-color: var(--ico-accent-color);
+    fill: var(--ico-ligt-accent-color);
+  }
+}
