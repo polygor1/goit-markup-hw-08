@@ -2,15 +2,27 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 60px auto 0;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    padding-left: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 23px;
+  }
 
   &__form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     justify-content: center;
-    width: 100%;
-
+      width: 100%;
+    @media screen and (min-width: $mobile) and (max-width: $desktop - 1px) {
+      width: 450px;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
   &__input {
     width: 100%;
@@ -29,7 +41,9 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-
+    @media screen and (min-width: $desktop) {
+      width: 358px;
+    }
     &:hover,
     &:focus {
       color: var(--footer-color);

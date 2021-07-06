@@ -140,6 +140,10 @@
     letter-spacing: 0.03em;
     padding: 6px 22px;
     margin-top: 20px;
+    @media screen and (min-width: $desktop) {
+     margin: 0 ;
+
+    }
 
     &:hover,
     &:focus {

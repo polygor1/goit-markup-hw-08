@@ -28,5 +28,8 @@
 @media screen and (min-width: $desktop){
   .header {
     padding: 24px 0 25px;
+    & .logo {
+      color: var(--logo-dark-color);
+    }
   }
 }

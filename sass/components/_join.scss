@@ -1,7 +1,14 @@
 .join {
   display: flex;
   flex-direction: column;
-    margin: 60px auto 0;
+  margin: 0 auto ;
+  padding: 5px 0 0;
+
+  // width: 206px;
+  // @media screen and (min-width: $desktop) {
+  //   margin: 0;
+
+  // }
 
   & .socnet__item {
     background-color: var(--background-footer-icon-color);
