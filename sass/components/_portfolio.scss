@@ -13,7 +13,7 @@
 
   &__list {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column ;
 
     @media screen and (min-width: $tablet) {
       display: grid;
