@@ -1051,7 +1051,7 @@ ul {
   padding: 40px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 449px) {
   .modal {
     width: 100vw;
   }
@@ -1061,21 +1061,6 @@ ul {
   .modal {
     width: 528px;
   }
-}
-
-.modal__text {
-  font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: 0.03em;
-  color: var(--regular-color);
-  margin-left: 23px;
-}
-
-.modal__text--accent {
-  text-decoration-line: underline;
-  color: var(--touch-color);
-  cursor: pointer;
-  margin-left: 0;
 }
 
 .callback {
@@ -1117,6 +1102,7 @@ ul {
   line-height: 1.1667;
   letter-spacing: 0.03em;
   color: var(--regular-color);
+  margin-bottom: 4px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1207,6 +1193,28 @@ ul {
 
 .checker__icon-check {
   fill: var(--ico-transparent-color);
+}
+
+.checker__text {
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: var(--regular-color);
+  margin-left: 23px;
+}
+
+@media screen and (min-width: 1200px) {
+  .checker__text {
+    font-size: 14px;
+    line-height: 1.714;
+  }
+}
+
+.checker__text--accent {
+  text-decoration-line: underline;
+  color: var(--touch-color);
+  cursor: pointer;
+  margin-left: 0;
 }
 
 .checker__checkbox {

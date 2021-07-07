@@ -25,6 +25,26 @@
   &__icon-check {
     fill: var(--ico-transparent-color);
   }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+    color: var(--regular-color);
+    margin-left: 23px;
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.714;
+    }
+
+    &--accent {
+      text-decoration-line: underline;
+      color: var(--touch-color);
+      cursor: pointer;
+      margin-left: 0;
+    }
+  }
+
   &__checkbox {
     appearance: none;
     position: relative;

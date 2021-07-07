@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
-  @media screen and (max-width: $mobile - 1px) {
+  @media screen and (max-width: $mobile - 31px) {
     width: 100vw;
   }
   @media screen and (min-width: $desktop) {
@@ -16,18 +16,5 @@
   border-radius: 4px;
   padding: 40px;
 
-  &__text {
-    font-size: 12px;
-    line-height: 1.167;
-    letter-spacing: 0.03em;
-    color: var(--regular-color);
-    margin-left: 23px;
 
-    &--accent {
-      text-decoration-line: underline;
-      color: var(--touch-color);
-      cursor: pointer;
-      margin-left: 0;
-    }
-  }
 }
