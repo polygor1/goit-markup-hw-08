@@ -1100,7 +1100,7 @@ ul {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.1667;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   color: var(--regular-color);
   margin-bottom: 4px;
 }

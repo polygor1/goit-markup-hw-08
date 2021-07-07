@@ -25,12 +25,11 @@
         <span class="logo__part">Web</span>Studio
       </a>
       <!-- Sandwich menu -->
-      <a class="button__menu touch-transform menu-open" href="#">
+      <a class="button__menu touch-transform " href="./menu.html">
         <svg class="button__menu--icon touch-transform" width="40" height="40">
           <use href="./images/icons.svg#icon-menu"></use>
         </svg>
       </a>
-
       <!-- Navigation -->
       <nav class="nav">
         <ul class="nav__list">
@@ -45,7 +44,6 @@
           </li>
         </ul>
       </nav>
-
       <!-- e-Adress -->
       <div class="eadr ">
         <a class="eadr__mail touch-transform" href="mailto:info@devstudio.com">
@@ -156,7 +154,7 @@
               <source srcset="
                       ./images/desktop/1x/box3.jpg 1x,
                       ./images/desktop/2x/box3.jpg 2x " />
-              <img src="./images/desktop/2x/box3.jpg" alt="изайнерские решения" width="370" height="294" />
+              <img src="./images/desktop/2x/box3.jpg" alt="Дизайнерские решения" width="370" height="294" />
             </picture>
             <h3 class="inside__text">Дизайнерские решения</h3>
           </li>
@@ -169,7 +167,18 @@
         <h2>Наша команда</h2>
         <ul class="team__list">
           <li class="team__card">
-            <img class="team__img" src="./images/mobile/1x/img1.jpg" alt="Igor" width="100%" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="
+                      ./images/mobile/1x/img1.jpg 1x,
+                      ./images/mobile/2x/img1.jpg 2x" />
+              <source media="(max-width: 1199px)" srcset="
+                      ./images/tablet/1x/img1.jpg 1x,                      
+                      ./images/tablet/2x/img1.jpg 2x" />
+              <source media="(min-width: 1200px)" srcset="
+                      ./images/desktop/1x/img1.jpg 1x,
+                      ./images/desktop/2x/img1.jpg 2x" />
+              <img class="team__img" src="./images/desktop/2x/img1.jpg" alt="Igor" width="100%" /> 
+            </picture>
             <div class="team__text">
               <p class="team__names">Игорь Демьяненко</p>
               <p class="team__metier">Product Designer</p>
@@ -208,7 +217,18 @@
             </div>
           </li>
           <li class="team__card">
-            <img class="team__img" src="./images/mobile/1x/img2.jpg" alt="Olga" width="100%" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="
+                      ./images/mobile/1x/img2.jpg 1x,
+                      ./images/mobile/2x/img2.jpg 2x" />
+              <source media="(max-width: 1199px)" srcset="
+                      ./images/tablet/1x/img2.jpg 1x,                      
+                      ./images/tablet/2x/img2.jpg 2x" />
+              <source media="(min-width: 1200px)" srcset="
+                      ./images/desktop/1x/img2.jpg 1x,
+                      ./images/desktop/2x/img2.jpg 2x" />
+              <img class="team__img" src="./images/desktop/2x/img2.jpg" alt="Olga" width="100%" /> 
+            </picture>
             <div class="team__text">
               <p class="team__names">Ольга Репина</p>
               <p class="team__metier">Frontend Developer</p>
@@ -247,7 +267,18 @@
             </div>
           </li>
           <li class="team__card">
-            <img class="team__img" src="./images/mobile/1x/img3.jpg" alt="Nikolay" width="100%" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="
+                      ./images/mobile/1x/img3.jpg 1x,
+                      ./images/mobile/2x/img3.jpg 2x" />
+              <source media="(max-width: 1199px)" srcset="
+                      ./images/tablet/1x/img3.jpg 1x,                      
+                      ./images/tablet/2x/img3.jpg 2x" />
+              <source media="(min-width: 1200px)" srcset="
+                      ./images/desktop/1x/img3.jpg 1x,
+                      ./images/desktop/2x/img3.jpg 2x" />
+              <img class="team__img" src="./images/desktop/2x/img3.jpg" alt="Nikolay" width="100%" /> 
+            </picture>
             <div class="team__text">
               <p class="team__names">Николай Тарасов</p>
               <p class="team__metier">Marketing</p>
@@ -286,7 +317,18 @@
             </div>
           </li>
           <li class="team__card">
-            <img class="team__img" src="./images/mobile/1x/img4.jpg" alt="Mihail" width="100%" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="
+                      ./images/mobile/1x/img4.jpg 1x,
+                      ./images/mobile/2x/img4.jpg 2x" />
+              <source media="(max-width: 1199px)" srcset="
+                      ./images/tablet/1x/img4.jpg 1x,                      
+                      ./images/tablet/2x/img4.jpg 2x" />
+              <source media="(min-width: 1200px)" srcset="
+                      ./images/desktop/1x/img4.jpg 1x,
+                      ./images/desktop/2x/img4.jpg 2x" />
+              <img class="team__img" src="./images/desktop/2x/img4.jpg" alt="Mihail" width="100%" /> 
+            </picture>
             <div class="team__text">
               <p class="team__names">Михаил Ермаков</p>
               <p class="team__metier">UI Designer</p>
@@ -451,7 +493,6 @@
   </footer>
 
   <!-- Modal window -->
-
   <div class="backdrop is-hidden touch-transform" data-modal>
     <div class="modal">
       <button type="reset" class="button__close" data-modal-close>
@@ -515,7 +556,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
-  <script src="./js/menu.js"></script>
+  <!-- <script src="./js/menu.js"></script> -->
 </body>
 
 </html>
