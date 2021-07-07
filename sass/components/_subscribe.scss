@@ -7,7 +7,9 @@
     padding-left: 14px;
   }
   @media screen and (min-width: $desktop) {
+    justify-content: start;
     padding-left: 23px;
+    padding-top: 5px;
   }
 
   &__form {
